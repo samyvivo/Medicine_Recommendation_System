@@ -7,7 +7,7 @@ import gdown
 
 file_path = "similarity_matrix.joblib"
 if not os.path.exists(file_path):
-    file_id = "https://drive.google.com/file/d/1DyGbsLHhKOrvAqOQzmPBUr0l-eZiBU0e/view?usp=drive_link"
+    file_id = "https://drive.google.com/file/d/1DyGbsLHhKOrvAqOQzmPBUr0l-eZiBU0e/view?usp=sharing"
     url = f"https://drive.google.com/uc?id={file_id}"
     gdown.download(url, file_path, quiet=False)
 
