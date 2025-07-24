@@ -1,6 +1,15 @@
 import streamlit as st
 import pandas as pd
 import joblib
+import os
+import gdown
+
+
+file_path = "similarity_matrix.joblib"
+if not os.path.exists(file_path):
+    file_id = "your_file_id_here"
+    url = f"https://drive.google.com/uc?id={file_id}"
+    gdown.download(url, file_path, quiet=False)
 
 # Load model & data
 df = joblib.load("df_medicine.joblib")
