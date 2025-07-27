@@ -41,6 +41,8 @@ drug_list = df['Drug_Name'].sort_values().unique()
 typed_input = st.text_input("🔍 Type medicine name (optional)", placeholder="e.g., Oxypamol, Paracetamol")
 selected_input = st.selectbox("Or select medicine from list 🔽", options=[""] + list(drug_list))
 
+
+# author : Saman Zeitounian
 # Choose which input to use
 user_input = typed_input.strip() or selected_input.strip()
 
